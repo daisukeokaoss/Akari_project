@@ -14,6 +14,10 @@
 		702BD59220E4656B0001757D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702BD59020E4656B0001757D /* LaunchScreen.storyboard */; };
 		702BD59D20E4656B0001757D /* Akari_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702BD59C20E4656B0001757D /* Akari_projectTests.swift */; };
 		702BD5A820E4656B0001757D /* Akari_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702BD5A720E4656B0001757D /* Akari_projectUITests.swift */; };
+		702BD5BA20E468A00001757D /* EasyImagy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702BD5B920E468A00001757D /* EasyImagy.framework */; };
+		702BD5BB20E468A00001757D /* EasyImagy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 702BD5B920E468A00001757D /* EasyImagy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		702BD5BD20E468BF0001757D /* EasyCamery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702BD5BC20E468BF0001757D /* EasyCamery.framework */; };
+		702BD5BE20E468BF0001757D /* EasyCamery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 702BD5BC20E468BF0001757D /* EasyCamery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		702BD5B820E468870001757D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				702BD5BB20E468A00001757D /* EasyImagy.framework in Embed Frameworks */,
+				702BD5BE20E468BF0001757D /* EasyCamery.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		702BD58420E465690001757D /* Akari_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Akari_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		702BD58720E4656A0001757D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +66,9 @@
 		702BD5A320E4656B0001757D /* Akari_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Akari_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		702BD5A720E4656B0001757D /* Akari_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Akari_projectUITests.swift; sourceTree = "<group>"; };
 		702BD5A920E4656B0001757D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702BD5B520E468870001757D /* EasyImagy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyImagy.framework; path = Carthage/Build/iOS/EasyImagy.framework; sourceTree = "<group>"; };
+		702BD5B920E468A00001757D /* EasyImagy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyImagy.framework; path = Carthage/Build/iOS/EasyImagy.framework; sourceTree = "<group>"; };
+		702BD5BC20E468BF0001757D /* EasyCamery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyCamery.framework; path = Carthage/Build/iOS/EasyCamery.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702BD5BA20E468A00001757D /* EasyImagy.framework in Frameworks */,
+				702BD5BD20E468BF0001757D /* EasyCamery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +101,9 @@
 		702BD57B20E465690001757D = {
 			isa = PBXGroup;
 			children = (
+				702BD5BC20E468BF0001757D /* EasyCamery.framework */,
+				702BD5B520E468870001757D /* EasyImagy.framework */,
+				702BD5B920E468A00001757D /* EasyImagy.framework */,
 				702BD58620E465690001757D /* Akari_project */,
 				702BD59B20E4656B0001757D /* Akari_projectTests */,
 				702BD5A620E4656B0001757D /* Akari_projectUITests */,
@@ -135,6 +162,7 @@
 				702BD58020E465690001757D /* Sources */,
 				702BD58120E465690001757D /* Frameworks */,
 				702BD58220E465690001757D /* Resources */,
+				702BD5B820E468870001757D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -432,6 +460,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4JADE2386;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Akari_project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +482,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4JADE2386;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Akari_project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
