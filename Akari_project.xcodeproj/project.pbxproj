@@ -18,6 +18,7 @@
 		702BD5BB20E468A00001757D /* EasyImagy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 702BD5B920E468A00001757D /* EasyImagy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		702BD5BD20E468BF0001757D /* EasyCamery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702BD5BC20E468BF0001757D /* EasyCamery.framework */; };
 		702BD5BE20E468BF0001757D /* EasyCamery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 702BD5BC20E468BF0001757D /* EasyCamery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		702BD5C020E48F7D0001757D /* GraphPlotToImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702BD5BF20E48F7D0001757D /* GraphPlotToImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		702BD5B520E468870001757D /* EasyImagy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyImagy.framework; path = Carthage/Build/iOS/EasyImagy.framework; sourceTree = "<group>"; };
 		702BD5B920E468A00001757D /* EasyImagy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyImagy.framework; path = Carthage/Build/iOS/EasyImagy.framework; sourceTree = "<group>"; };
 		702BD5BC20E468BF0001757D /* EasyCamery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyCamery.framework; path = Carthage/Build/iOS/EasyCamery.framework; sourceTree = "<group>"; };
+		702BD5BF20E48F7D0001757D /* GraphPlotToImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphPlotToImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		702BD57B20E465690001757D = {
 			isa = PBXGroup;
 			children = (
+				702BD5BF20E48F7D0001757D /* GraphPlotToImage.swift */,
 				702BD5BC20E468BF0001757D /* EasyCamery.framework */,
 				702BD5B520E468870001757D /* EasyImagy.framework */,
 				702BD5B920E468A00001757D /* EasyImagy.framework */,
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				702BD58A20E4656A0001757D /* ViewController.swift in Sources */,
+				702BD5C020E48F7D0001757D /* GraphPlotToImage.swift in Sources */,
 				702BD58820E4656A0001757D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
