@@ -103,7 +103,7 @@
 		702BD57B20E465690001757D = {
 			isa = PBXGroup;
 			children = (
-				702BD5BF20E48F7D0001757D /* GraphPlotToImage.swift */,
+				702BD5C120E4EB310001757D /* class */,
 				702BD5BC20E468BF0001757D /* EasyCamery.framework */,
 				702BD5B520E468870001757D /* EasyImagy.framework */,
 				702BD5B920E468A00001757D /* EasyImagy.framework */,
@@ -153,6 +153,14 @@
 				702BD5A920E4656B0001757D /* Info.plist */,
 			);
 			path = Akari_projectUITests;
+			sourceTree = "<group>";
+		};
+		702BD5C120E4EB310001757D /* class */ = {
+			isa = PBXGroup;
+			children = (
+				702BD5BF20E48F7D0001757D /* GraphPlotToImage.swift */,
+			);
+			path = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

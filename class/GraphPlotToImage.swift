@@ -16,14 +16,26 @@ class GraphPlotToImage: NSObject {
     
     func processGlaphPlot(inputImage:Image<RGBA<UInt8>>)->Image<RGBA<UInt8>>
     {
-        let Graph = self.extractPixelRValueIntegral(inputImage: inputImage)
-        
+        let Graph = self.extractPixelGValueIntegral(inputImage: inputImage)
+        return drawSpecifiedGraphG(inputImage: inputImage, graph: Graph)
     }
     
-    func drawSpecifiedGraph(inputImage:Image<RGBA<UInt8>>,graph:Array<UInt64>)->Image<RGBA<UInt8>>
+    func drawSpecifiedGraphG(inputImage:Image<RGBA<UInt8>>,graph:Array<UInt64>)->Image<RGBA<UInt8>>
     {
         let maxGaugeOfGraph = inputImage.height * 255
         
+        var outputImage:Image<RGBA<UInt8>> = inputImage;
+        
+        for w in 0..<inputImage.width{
+            for h in 0..<inputImage.height{
+                if(Double(inputImage.height)*Double(graph[w])/Double(maxGaugeOfGraph) > Double(h)){
+                    outputImage[w,h].red = 0
+                    outputImage[w,h].green = 255
+                    outputImage[w,h].blue = 0
+                }
+            }
+        }
+        return outputImage
     }
     
     func extractPixelRValueIntegral(inputImage:Image<RGBA<UInt8>>)->Array<UInt64>
