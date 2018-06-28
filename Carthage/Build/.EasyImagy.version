@@ -1,0 +1,9 @@
+{
+  "commitish" : "51739280a3e9c8143b7406e699d3720b33764105",
+  "iOS" : [
+    {
+      "name" : "EasyImagy",
+      "hash" : "7f6c886ba0ea562a78c515ea6776c6fd6d6a33e1a26e162fd1ed739dbe901913"
+    }
+  ]
+}

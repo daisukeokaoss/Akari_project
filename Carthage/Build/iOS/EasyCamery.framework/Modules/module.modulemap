@@ -1,0 +1,11 @@
+framework module EasyCamery {
+  umbrella header "EasyCamery.h"
+
+  export *
+  module * { export * }
+}
+
+module EasyCamery.Swift {
+    header "EasyCamery-Swift.h"
+    requires objc
+}

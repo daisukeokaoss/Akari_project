@@ -1,0 +1,9 @@
+{
+  "commitish" : "9c3780803348e4c7d084ce6361b8b5597ced6179",
+  "iOS" : [
+    {
+      "name" : "EasyCamery",
+      "hash" : "da34c736d224abd8834e8f5c65b81ef732a53b5ffaa8d4e0001f7cd5dbe2c110"
+    }
+  ]
+}
