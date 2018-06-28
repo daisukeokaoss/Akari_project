@@ -23,7 +23,9 @@ class ViewController: UIViewController {
     
         camera.start { [weak self] image in
             // Makes `image` negative
+            print(image[100,100])
             image.update { pixel in
+                
                 pixel.red = 255 - pixel.red
                 pixel.green = 255 - pixel.green
                 pixel.blue = 255 - pixel.blue

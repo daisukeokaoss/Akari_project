@@ -1,1 +1,2 @@
 github "koher/EasyCamery" "master"
+github "mattt/Surge" ~> 2.0.0
