@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         var graphplot = GraphPlotToImage()
         camera.start { [weak self] image in
             // Makes `image` negative
-            print(image[100,100])
+            //print(image[100,100])
             image = graphplot.processGlaphPlot(inputImage: image)
             image.update { pixel in
                 
