@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        var graphplot = GraphPlotToImage()
+        let graphplot = GraphPlotToImage()
         camera.start { [weak self] image in
             // Makes `image` negative
             //print(image[100,100])
