@@ -20,16 +20,16 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-    
+        var graphplot = GraphPlotToImage()
         camera.start { [weak self] image in
             // Makes `image` negative
             print(image[100,100])
-        
+            image = graphplot.processGlaphPlot(inputImage: image)
             image.update { pixel in
                 
-                pixel.red = 255 - pixel.red
-                pixel.green = 255 - pixel.green
-                pixel.blue = 255 - pixel.blue
+                //pixel.red = 255 - pixel.red
+                //pixel.green = 255 - pixel.green
+                //pixel.blue = 255 - pixel.blue
             }
             
             self?.imageView.image = image.uiImage
